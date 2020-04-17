@@ -1,54 +1,59 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import '../App.css';
-import {Card,CardImg,Button} from 'reactstrap';
-import {Redirect,Link} from 'react-router-dom';
+import { Card, CardImg, Button } from 'reactstrap';
+import { Redirect, Link } from 'react-router-dom';
 
-class Home extends Component{
-    constructor(props){
-        super(props);
-        console.log("props : "+props.onClick);
-    }
-    // goToDisplayEvents(){
-    //     return <Redirect to="/events"/>
-    // }
+class Home extends Component {
 
-    render(){
-        return(
-            <div> 
-                <div>
-                    <div className="home-header">
-                        <div className="logo">
-                            <img src="/assets/images/aic_logo.png" alt="AIC Logo"/>
-                        </div>
-                    </div>
-                </div>
+    render() {
+        return (
+            <div>
+
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 xs-3">
+                        <div className="home-header col-12">
+                            <div className="row">
+                                <div className="col-6 mt-3">
+                                    <img src="/assets/images/aic_logo.png" alt="AIC Logo" />
+                                </div>
+                                <div className="col-6 mt-4 header-item">
+                                    <div className="header-item-text">
+                                        Co-working Space User App
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-6">
                             <Card>
-                                <CardImg src="/assets/images/event_space.png" alt="event space image"/>
+                                <CardImg src="/assets/images/event_space.png" alt="event space image" />
                             </Card>
                             <div className="text-center">
-                                <form action="/events">
-                                    <Button onClick="" color="primary">Event Space</Button> 
-                                </form>
-                                
+                                <Link to="/events">
+                                    <Button color="primary">Event Space</Button>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-6">
                             <Card>
-                                <CardImg src="/assets/images/pod_space.png" alt="podcast space image"/>
+                                <CardImg src="/assets/images/pod_space.png" alt="podcast space image" />
                             </Card>
                             <div className="text-center">
-                                <form action="/podcasts">
-                                    <Button type="submit" onClick="" color="primary">Podcast Space</Button>
-                                </form> 
+                                <Link to="/podcasts">
+                                    <Button color="primary">Podcast Space</Button>
+                                </Link>
                             </div>
                         </div>
-                    </div>                    
-                </div>                
+                    </div>
+                </div>
+
+
+
+
             </div>
-            
+
 
         )
     }
