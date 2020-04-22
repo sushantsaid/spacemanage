@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Card, CardImg, Button } from 'reactstrap';
-import { Redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -31,7 +31,7 @@ class Home extends Component {
                                 <CardImg src="/assets/images/event_space.png" alt="event space image" />
                             </Card>
                             <div className="text-center">
-                                <Link to="/events">
+                                <Link to="/apply">
                                     <Button color="primary">Event Space</Button>
                                 </Link>
                             </div>

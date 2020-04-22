@@ -4,7 +4,7 @@ class Podcasts extends Component{
     render(){
         return(
             <div>
-                Podcasts
+                Podcasts here
             </div>
         )
     }
