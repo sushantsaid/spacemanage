@@ -5,6 +5,7 @@ import Events from './EventsComponent';
 import Podcasts from './PodcastsComponent';
 import ApplicationForm from './ApplicationComponent';
 
+
 class Main extends Component{
 
 
@@ -23,4 +24,4 @@ class Main extends Component{
     }
 }
 
-export default (Main);
+export default Main;
