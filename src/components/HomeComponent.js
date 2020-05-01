@@ -41,7 +41,7 @@ class Home extends Component {
                                 <CardImg src="/assets/images/pod_space.png" alt="podcast space image" />
                             </Card>
                             <div className="text-center">
-                                <Link to="/podcasts">
+                                <Link to="/applications">
                                     <Button color="primary">Podcast Space</Button>
                                 </Link>
                             </div>

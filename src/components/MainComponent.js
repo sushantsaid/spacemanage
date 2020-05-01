@@ -1,10 +1,8 @@
 import React,{Component} from 'react';
 import {Route,Switch,Redirect} from 'react-router-dom';
 import Home from './HomeComponent'
-import Events from './EventsComponent';
-import Podcasts from './PodcastsComponent';
 import ApplicationForm from './ApplicationComponent';
-
+import Applications from "./DisplayApplications";
 
 class Main extends Component{
 
@@ -14,9 +12,8 @@ class Main extends Component{
             <div>
                 <Switch>
                     <Route path="/home" component={()=><Home/>}/>
-                    <Route exact path="/events" component={()=><Events/>}/>
-                    <Route exact path="/podcasts" component={()=><Podcasts/>}/>
                     <Route exact path="/apply" component={()=><ApplicationForm/>}/>
+                    <Route exact path="/applications" component={()=><Applications/>}/>
                     <Redirect to="/home"/>
                 </Switch>
             </div>
